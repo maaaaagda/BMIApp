@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI App</string>
+    <string name="welcoming">Welcome in BMI App!</string>
+    <string name="labelHeight">Height:</string>
+    <string name="labelWeight">Weight:</string>
+    <string name="editHeight">Edit Height:</string>
+    <string name="editWeight">Edit Weight:</string>
+    <string name="countedBMI">Count BMI</string>
+    <string name="resultBMI">Your BMI</string>
+    <string name="resultText">Your BMI:</string>
+    <string name="unitKg">kg</string>
+    <string name="unitMeter">m</string>
+</resources>
