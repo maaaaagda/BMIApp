@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MI_Save"
+        android:title="@string/optionsSave" />
+    <item
+        android:id="@+id/MI_Restore"
+        android:title="@string/optionsRestore" />
+
+    <item
+        android:id="@+id/MI_Share"
+        android:title="@string/optionsShare" />
+    <item
+        android:id="@+id/MI_About"
+        android:title="@string/optionsAbout" />
+</menu>

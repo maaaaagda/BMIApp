@@ -4,7 +4,7 @@ package com.polak.magda.lab_1;
  * Created by DELL on 14.03.2017.
  */
 
-public class CountBMIForKGM implements FirstInterface{
+public class CountBMIForKgM implements BMIInterface {
     static final float minHeight = 0.5f;
     static final float maxHeight = 2.5f;
     static final float minWeight = 10;
@@ -27,6 +27,7 @@ public class CountBMIForKGM implements FirstInterface{
         else
             throw new IllegalArgumentException("Wrong height or weight");
     }
+
 
 
 }

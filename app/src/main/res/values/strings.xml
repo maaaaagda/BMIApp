@@ -6,8 +6,22 @@
     <string name="editHeight">Edit Height:</string>
     <string name="editWeight">Edit Weight:</string>
     <string name="countedBMI">Count BMI</string>
-    <string name="resultBMI">Your BMI</string>
     <string name="resultText">Your BMI:</string>
+    <string name="countBMI">Count BMI:</string>
+    <string name="unitKg_m">Kg/m</string>
+    <string name="unitIb_feet">Ib/feet</string>
     <string name="unitKg">kg</string>
     <string name="unitMeter">m</string>
+    <string name="unitIb">Ib</string>
+    <string name="unitFeet">feet</string>
+
+    <string name="optionsSave">Save</string>
+    <string name="optionsRestore">Restore</string>
+    <string name="optionsShare">Share</string>
+    <string name="optionsAbout">About</string>
+
+    <string name="describeAuthor">I am second year student of Computer Science happy to show you my first Android App ;D</string>
+
+    <string name="goBack">Back</string>
+
 </resources>

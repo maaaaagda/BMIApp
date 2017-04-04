@@ -15,9 +15,11 @@ public class CountBMITest {
         //given
         float testWeight = -10;
         //when
-        FirstInterface test = new CountBMIForKGM();
+        BMIInterface test = new CountBMIForKgM();
+        BMIInterface test1 = new CountBMIForIbFeet();
        //then
         Assert.assertFalse(test.isValidWeight(testWeight));
+        Assert.assertFalse(test1.isValidWeight(testWeight));
 
     }
     @Test
@@ -26,32 +28,40 @@ public class CountBMITest {
         //given
         float testHeight = -10;
         //when
-        FirstInterface test = new CountBMIForKGM();
+        BMIInterface test = new CountBMIForKgM();
+        BMIInterface test1 = new CountBMIForIbFeet();
         //then
         Assert.assertFalse(test.isValidHeight(testHeight));
+        Assert.assertFalse(test1.isValidHeight(testHeight));
+
 
     }
     @Test
     public void weightOverLimitIsIncorrect()throws Exception
     {
         //given
-        float testWeight = 300;
+        float testWeight = 600;
         //when
-        FirstInterface test = new CountBMIForKGM();
+        BMIInterface test = new CountBMIForKgM();
+        BMIInterface test1 = new CountBMIForIbFeet();
         //then
         Assert.assertFalse(test.isValidWeight(testWeight));
+        Assert.assertFalse(test1.isValidWeight(testWeight));
 
     }
     @Test
     public void heightUOverLimitIsIncorrect()throws Exception
     {
         //given
-        float testHeight = 3;
+        float testHeight = 9;
+
         //when
-        FirstInterface test = new CountBMIForKGM();
+        BMIInterface test = new CountBMIForKgM();
+        BMIInterface test1 = new CountBMIForIbFeet();
+
         //then
         Assert.assertFalse(test.isValidHeight(testHeight));
-
+        Assert.assertFalse(test1.isValidHeight(testHeight));
     }
 }
 

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="19dp"
-    android:layout_marginRight="19dp">
+    android:layout_marginRight="19dp"
+    >
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,78 +23,21 @@
         android:id="@+id/relativeLayout2">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:id="@+id/textViewWeight"
-            android:text="@string/labelWeight"
-            android:textSize="20sp"
-            android:gravity="center_vertical"
-            android:includeFontPadding="false"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:id="@+id/textViewWeightUnit"
-            android:text="@string/unitKg"
-            android:textSize="20sp"
-            android:gravity="center_vertical"
-            android:includeFontPadding="false"
-            android:layout_alignBottom="@+id/editWeight"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-
-            />
-
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="@string/editWeight"
             android:textSize="20sp"
+            android:id="@+id/editHeight"
             android:inputType="numberDecimal"
-            android:id="@+id/editWeight"
-            android:layout_marginRight="13dp"
-            android:layout_marginEnd="13dp"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/textViewWeightUnit"
-            android:layout_toStartOf="@+id/textViewWeightUnit" />
-
-    </RelativeLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="@string/countedBMI"
-        android:textSize="30sp"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="26dp"
-        android:id="@+id/buttonCountBMI">
-    </Button>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/textViewWelcoming"
-        android:text="@string/welcoming"
-        android:textSize="20sp"
-        android:layout_marginTop="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout"
-        android:layout_below="@+id/textViewWelcoming"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
+            android:gravity="right"
+            android:ellipsize="start"
+            android:hint="@string/editHeight"
+            android:fontFamily="casual"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_alignTop="@+id/textViewHeight"
+            android:layout_toLeftOf="@+id/textViewHeightUnit"
+            android:layout_toStartOf="@+id/textViewHeightUnit" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -99,37 +47,95 @@
             android:textSize="20sp"
             android:gravity="center_vertical"
             android:includeFontPadding="false"
+            android:fontFamily="casual"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/textViewHeightUnit"
             android:text="@string/unitMeter"
             android:textSize="20sp"
             android:gravity="center_vertical"
             android:includeFontPadding="false"
-            android:layout_alignBottom="@+id/editHeight"
+            android:fontFamily="casual"
+            android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentEnd="true" />
 
-            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/countBMI"
+        android:textSize="30sp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="casual"
+        android:id="@+id/buttonCountBMI">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/textViewWeightUnit"
+            android:text="@string/unitKg"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:fontFamily="casual"
+            android:layout_alignBaseline="@+id/editWeight"
+            android:layout_alignBottom="@+id/editWeight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="@string/editHeight"
             android:textSize="20sp"
-            android:id="@+id/editHeight"
             android:inputType="numberDecimal"
-            android:layout_alignBaseline="@+id/textViewHeight"
-            android:layout_alignBottom="@+id/textViewHeight"
-            android:layout_toLeftOf="@+id/textViewHeightUnit"
-            android:layout_toStartOf="@+id/textViewHeightUnit"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="10dp" />
+            android:id="@+id/editWeight"
+            android:gravity="right"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/editWeight"
+            android:fontFamily="casual"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textViewWeightUnit"
+            android:layout_toStartOf="@+id/textViewWeightUnit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/textViewWeight"
+            android:text="@string/labelWeight"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:fontFamily="casual"
+            android:layout_weight="1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
 
     </RelativeLayout>
     <TextView
@@ -154,5 +160,53 @@
         android:layout_below="@+id/textViewResultText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-</RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textViewWelcoming"
+        android:text="@string/welcoming"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textViewWelcoming"
+    android:id="@+id/radioGroup1"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+
+    <RadioButton android:id="@+id/radio_kg_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unitKg_m"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:checked="true"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton android:id="@+id/radio_Ib_feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unitIb_feet"
+        android:gravity="center_vertical"
+        android:onClick="onRadioButtonClicked"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/radio_kg_m"
+        android:layout_toEndOf="@+id/radio_kg_m"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        />
+    </RadioGroup>
+
+    </RelativeLayout>
+</ScrollView>
 
